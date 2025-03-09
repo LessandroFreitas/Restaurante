@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../css/stylereserva.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html>
+
+  <body>
+    <div class="menu">
+      <div>
+        <a href="../index.html">Home</a>
+        <a href="/pages/menu.html">Menu</a>
+      </div>
+      <div>
+        <a href="/pages/reserva.html">Faça sua reserva</a>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>FAÇA SUA RESERVA.</h2>
+
+    <form class="form">
+      <div><br>
+        <label for="fname">Nome:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Digite seu nome"><br>
+      </div>
+
+      <div class="centerdiv">
+        <div><br>
+          <label for="CPF">CPF:</label>
+          <input type="text" id="CPF" name="CPF" placeholder="Digite seu CPF">
+
+        </div>
+
+        <div><br>
+          <label for="name">Selecione a unidade</label>
+          <select name="pergunta7" id="p7">
+            <option value="id">Campina Grande</option>
+            <option value="type">João Pessoa</option>
+            <option value="placeholder">Natal</option>
+          </select> <br>
+        </div>
+
+        <div><br>
+          <label for="date">Selecione a data</label><br>
+          <input id="date" type="date" /><br>
+        </div>
+
+        <div><br>
+          <label for="hora">Selecione o horário</label><br>
+          <input id="hora" type="time" min="10:00" max="21:00" required><br>
+        </div>
+        
+        <p>Aberto de <time>10:00</time> as <time>21:00</time> todo dia.</p>
+      
+        <div class="botao"><br>
+          <input type="submit" value="RESERVAR">
+          </div>
+    </form>
+
+
+    <h3><p>Ao clicar em "Reservar", você confirmará a sua reserva para a unidade selecionada.</p></h3>
+
+  </body>
+  </html>

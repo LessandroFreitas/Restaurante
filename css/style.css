@@ -1,5 +1,5 @@
 .body {
-  background-color: #ffffff;
+  background-color: #ffdeaff2;
 }
 
 .menu {
@@ -57,7 +57,14 @@
 .promocao-card {
   width: 31%;
   border-radius: 10px;
+  background-color: white;
+
   box-shadow: 0px 3px 5px rgb(194, 194, 194);
+}
+
+.promocao-link {
+  text-decoration: none;
+  color:black;
 }
 
 .promocao img {
@@ -71,14 +78,11 @@
 .texto-card {
   word-wrap: break-word;
   margin: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-left-radius: 20px;
 }
 
 .texto-card h2 {
   border-bottom: #afafaf34 solid 1px;
 }
-
 
 .texto-card-valores {
   display: flex;
@@ -133,13 +137,13 @@
   color: black;
 }
 
-.form{
+.form {
   display: grid;
   justify-content: center;
   border-top: #afafaf34 solid 1px;
 }
 
-.form div{
+.form div {
   display: flex;
   align-content: center;
 }

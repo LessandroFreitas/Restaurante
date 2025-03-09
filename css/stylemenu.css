@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+.menu {
+    background-color: #333333c6;
+    background-image: linear-gradient(#333333, #33333300);
+    position: fixed;
+    width: 100%;
+  }
+  
+  .menu a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .menu a:hover {
+    box-shadow: inset 0 -5px 0 0 rgb(255, 255, 255);
+  }
+
+/* Cabeçalho */
+header {
+  background-color: #f7c37bf2;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 3px solid #edba73;
+}
+
+/* Grid de pratos */
+
+h2 {
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #f7c37bf2;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  margin: 100;
+}
+
+.container {
+  background-color: #ffefdaf2;
+  min-height: 60vh;
+  padding: 50px;
+}
+
+.products-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  width: 30%;
+  display: inline-block;
+  margin: 1% 1%;
+  padding: px;
+  text-align: justify;
+}
+
+.product-image {
+  border-radius: 10px;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+#img-1 {
+  background-image: url("../src/img/favada.jpg");
+}
+
+#img-2 {
+  background-image: url("../src/img/carnedesol.jpg");
+}
+
+#img-3 {
+  background-image: url("../src/img/feijoada.jpg.png");
+}
+
+#img-4 {
+  background-image: url("../src/img/acaraje.jpg");
+}
+
+#img-5 {
+  background-image: url("../src/img/arrozcarreteiro.jpg");
+}
+
+#img-6 {
+  background-image: url("../src/img/baiaodedois.jpg");
+}
+
+#img-7 {
+  background-image: url("../src/img/galinhada.jpg");
+}
+
+#img-8 {
+  background-image: url("../src/img/picado.jpg");
+}
+
+#img-9 {
+  background-image: url("../src/img/carnedesolnanata.jpg");
+}
+
+#img-10 {
+  background-image: url("../src/img/refrigerante2.jpg");
+}
+#img-11 {
+  background-image: url("../src/img/cerveja.webp");
+}
+#img-12 {
+  background-image: url("../src/img/agua.jpg");
+}
+
+h3 {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
+  color: #b46e0c;
+  border-left: 5px solid #fcd6a8;
+  padding-left: 7px;
+  font-size: 24px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #de9a3bb6;
+  padding: 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #e9b676ce;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+  border-radius: 10px;
+  background-color: #de9a3bb6;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+.final {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card a {
+  text-decoration: none;
+  color: #a7680f;
+}
+
+.menu-bebidas {
+  padding: 30px;
+  width: 100%;
+}
