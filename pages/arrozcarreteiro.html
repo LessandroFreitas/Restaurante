@@ -6,43 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title> Restaurante Pé de fava </title>
     <link rel="stylesheet" href="../css/stylespratos.css"/>
+    <link rel="icon" href="../src/img/icone.jpg">
+    <script src="../js/script.js"></script>
 
 </head>
     <body>
-        <!-- Cabeçalho -->
-            <header> 
-                <h1> restaurante pé de fava </h1>
-            </header>
-
-        <!-- Grid do prato escolhido -->
+                
+        <div class="menu">
+            <div>
+              <a href="../index.html">Home</a>
+              <a href="../pages/menu.html">Menu</a>
+              <a href="../pages/comentarios.html">Avaliações</a>
+            </div>
+            <div>
+              <a href="../pages/reserva.html">Faça sua reserva</a>
+              <a class="a2" href="../pages/carrinho.html">
+                <img src="../src/img/carrin.PNG" width="15" />
+              </a>
+            </div>
+          </div>
+                  
             <p><h2> ARROZ CARRETEIRO </h2></p>
             <main class="container">
-                <section class="products-container"> 
+                <div class="products-container"> 
                     <div class="card">
                         <div class="product-image" id="img-5"></div>
                         
                         <h3>Arroz Carreteiro </h3>
                         <p> Uma deliciosa e reconfortante receita que resgata a tradição dos tropeiros! Nosso arroz carreteiro é feito com arroz soltinho, carne de sol desfiada, linguiça e um toque especial de temperos frescos, cozidos lentamente para realçar todos os sabores. O prato é completo e recheado de sabor, perfeito para quem aprecia a cozinha rústica e cheia de história. Acompanhado de legumes frescos e uma farofa crocante, o arroz carreteiro é uma verdadeira explosão de sabor que vai transportar você para o coração do Brasil rural! </p>
                         <p>
-                             R$ 
-                             <span class="bold"> 129,90 </span>
+                            <p><s>R$ <span class="bold">159,90</span></s> R$ <span class="bold">129,90</span></p>
                         </p>
-                        <a href="#" class="btn"> Adicionar ao pedido </a>
+                        <a onclick="adicionarItem(5)" href="./carrinho.html" class="btn"> Adicionar ao pedido </a>
                     </div>
-                </section> 
+                </div> 
             </main>
 
-        <!-- Rodapê -->
             <footer>
-                <p> 
-                    <span class="bold"> Pé de fava </span> 
-                    &copy; 2025
-                        <div class="final"><br>
-                            <p><a href="#" class="final"> Instagram </a></p>
-                            <p><a href="#" class="final"> Whatsapp  </a></p>
-                        </div>
-                </p> 
-            </footer>
+                <p>
+                  <span class="bold">Pé de Fava</span>
+                  &copy; 2025
+                </p>
+                <div class="final">
+                  <p><a href="https://api.whatsapp.com/send?phone=5583993849744&text=Card%C3%A1pio%2C%20por%20favor%21" class="final" target="_blank">Whatsapp</a></p>
+                  <p><a href="https://www.instagram.com/" class="final" target="_blank">Instagram</a></p>
+                </div>
+              </footer>
 
     </body>
 </html>

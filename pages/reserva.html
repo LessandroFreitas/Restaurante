@@ -5,21 +5,22 @@
   <link rel="stylesheet" href="../css/stylereserva.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="icon" href="../src/img/icone.jpg">
+  <title> Restaurante Pé de fava </title>
 </head>
-
-<body>
-  <!DOCTYPE html>
-  <html>
 
   <body>
     <div class="menu">
       <div>
         <a href="../index.html">Home</a>
-        <a href="/pages/menu.html">Menu</a>
+        <a href="../pages/menu.html">Menu</a>
+        <a href="../pages/comentarios.html">Avaliações</a>
       </div>
       <div>
-        <a href="/pages/reserva.html">Faça sua reserva</a>
+        <a href="../pages/reserva.html">Faça sua reserva</a>
+        <a class="a2" href="../pages/carrinho.html">
+          <img src="../src/img/carrin.PNG" width="15" />
+        </a>
       </div>
     </div>
 
@@ -30,22 +31,23 @@
     <br>
     <h2>FAÇA SUA RESERVA.</h2>
 
-    <form class="form">
+    <form class="form" action= "#sucesso" method="get">
       <div><br>
         <label for="fname">Nome:</label><br>
-        <input type="text" id="fname" name="fname" placeholder="Digite seu nome"><br>
+        <input type="text" id="fname" name="fname" placeholder="Digite seu nome" required><br>
       </div>
 
       <div class="centerdiv">
         <div><br>
           <label for="CPF">CPF:</label>
-          <input type="text" id="CPF" name="CPF" placeholder="Digite seu CPF">
+          <input type="text" id="CPF" name="CPF" placeholder="Digite seu CPF" required>
 
         </div>
 
         <div><br>
           <label for="name">Selecione a unidade</label>
-          <select name="pergunta7" id="p7">
+          <select name="pergunta7" id="p7" required>
+            <option value="">Escolha uma cidade</option>
             <option value="id">Campina Grande</option>
             <option value="type">João Pessoa</option>
             <option value="placeholder">Natal</option>
@@ -54,23 +56,36 @@
 
         <div><br>
           <label for="date">Selecione a data</label><br>
-          <input id="date" type="date" /><br>
+          <input id="date" type="date" name="data" min="2025-04-09" required/><br>
         </div>
 
         <div><br>
           <label for="hora">Selecione o horário</label><br>
-          <input id="hora" type="time" min="10:00" max="21:00" required><br>
+          <input id="hora" type="time" name= "hora" min="10:00" max="21:00" required><br>
         </div>
         
         <p>Aberto de <time>10:00</time> as <time>21:00</time> todo dia.</p>
       
-        <div class="botao"><br>
+        <div class="botao">
           <input type="submit" value="RESERVAR">
           </div>
+          <br>
+        </div>
     </form>
-
-
     <h3><p>Ao clicar em "Reservar", você confirmará a sua reserva para a unidade selecionada.</p></h3>
-
+    <div id="sucesso" class="mensagem">
+      ✅ Reserva feita com sucesso!
+    </div>
+  
   </body>
+  <footer>
+    <p>
+      <span class="bold">Pé de Fava</span>
+      &copy; 2025
+    </p>
+    <div class="final">
+      <p><a href="https://api.whatsapp.com/send?phone=5583993849744&text=Card%C3%A1pio%2C%20por%20favor%21" class="final" target="_blank">Whatsapp</a></p>
+      <p><a href="https://www.instagram.com/" class="final" target="_blank">Instagram</a></p>
+    </div>
+  </footer>
   </html>

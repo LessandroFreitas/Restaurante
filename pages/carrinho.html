@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/stylecarrinho.css" />
+    <title>Carrinho - Pé de Fava</title>
+    <script src="../js/script.js"></script>
+  </head>
+
+  <header>
+    <div class="menu">
+      <div>
+        <a href="../index.html">Home</a>
+        <a href="../pages/menu.html">Menu</a>
+        <a href="../pages/comentarios.html">Avaliações</a>
+      </div>
+      <div>
+        <a href="../pages/reserva.html">Faça sua reserva</a>
+        <a class="a2" href="../pages/carrinho.html">
+          <img src="../src/img/carrin.PNG" width="15" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <br />
+    <br />
+    <div class="content">
+    <div class="carrinho-container">
+      <h1>Seu Carrinho</h1>
+      <div id="lista-carrinho"></div>
+      <div id="total-carrinho" class="total-geral"></div>
+    </div>
+
+    <script>
+      function atualizarCarrinho() {
+        const itens = retornaListaDeProdutos();
+        const lista = document.getElementById("lista-carrinho");
+        const totalContainer = document.getElementById("total-carrinho");
+
+        lista.innerHTML = "";
+
+        itens.forEach((item) => {
+          lista.innerHTML += `
+            <div class="item-carrinho">
+                <div class="item-info">
+                    <div class="item-nome">
+                        <h3>${item.nome}</h3>
+                    </div>
+                    <div class="item-valor">
+                <button onclick="mudarQuantidade(${item.id},${
+            item.quantidade - 1
+          })">-</button>
+                <span>${item.quantidade}x</span>
+                <button onclick="mudarQuantidade(${item.id},${
+            item.quantidade + 1
+          })">+</button>
+                <div class="item-preco">
+                    R$ ${item.precoFinal.toFixed(2)}
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    `;
+                  });
+                  
+                  const total = itens.reduce((acc, item) => acc + item.precoFinal, 0);
+                  totalContainer.innerHTML = `
+                  <div class="finalizar-pedido">
+                    <h3>Total: R$ ${total.toFixed(2)}</h3>
+                    <a href="https://api.whatsapp.com/send?phone=5583993849744&text=${gerarPedido()}" target="_blank" ><button>Finalizar pedido</button></a>
+                  </div>
+        `;
+      }
+
+      window.onload = atualizarCarrinho;
+    </script>
+    </div>
+    <footer>
+      <p>
+        <span class="bold">Pé de Fava</span>
+        &copy; 2025
+      </p>
+      <div class="final">
+        <p><a href="https://api.whatsapp.com/send?phone=5583993849744&text=Card%C3%A1pio%2C%20por%20favor%21" class="final" target="_blank">Whatsapp</a></p>
+        <p><a href="https://www.instagram.com/" class="final" target="_blank">Instagram</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

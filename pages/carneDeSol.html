@@ -6,43 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title> Restaurante Pé de fava </title>
     <link rel="stylesheet" href="../css/stylespratos.css"/>
-
+    <link rel="icon" href="../src/img/icone.jpg">
+    <script src="../js/script.js"></script>
 </head>
     <body>
-        <!-- Cabeçalho -->
-            <header> 
-                <h1> restaurante pé de fava </h1>
-            </header>
-
-        <!-- Grid do prato escolhido -->
+       
+        <div class="menu">
+            <div>
+              <a href="../index.html">Home</a>
+              <a href="../pages/menu.html">Menu</a>
+              <a href="../pages/comentarios.html">Avaliações</a>
+            </div>
+            <div>
+              <a href="../pages/reserva.html">Faça sua reserva</a>
+              <a class="a2" href="../pages/carrinho.html">
+                <img src="../src/img/carrin.PNG" width="15" />
+              </a>
+            </div>
+          </div>
+   
             <p><h2> CARNE DE SOL COMPLETA</h2></p>
             <main class="container">
-                <section class="products-container"> 
+                <div class="products-container"> 
                     <div class="card">
                         <div class="product-image" id="img-2"></div>
                         
                         <h3> Carne de sol completa </h3>
                         <p> Uma deliciosa iguaria da culinária nordestina, nossa carne de sol é cuidadosamente selecionada e curada com sal, depois secada ao sol para preservar seu sabor único e textura macia. Servida desfiada ou em pedaços, acompanha arroz fresquinho, feijão verde, farofa crocante, mandioca cozida ou frita e uma porção de salada de legumes frescos. Uma verdadeira explosão de sabores que traz a essência do sertão diretamente para sua mesa! </p>
-                        <p>
-                             R$ 
-                             <span class="bold"> 149,90 </span>
+                        <p><p><s>R$ <span class="bold">189,90</span></s> R$ <span class="bold">149,90</span></p>
+            
                         </p>
-                        <a href="#" class="btn"> Adicionar ao pedido </a>
+                        <a onclick="adicionarItem(2)" href="./carrinho.html" class="btn"> Adicionar ao pedido </a>
                     </div>
-                </section> 
+                </div> 
             </main>
 
-        <!-- Rodapê -->
+      
             <footer>
-                <p> 
-                    <span class="bold"> Pé de fava </span> 
-                    &copy; 2025
-                        <div class="final"><br>
-                            <p><a href="#" class="final"> Instagram </a></p>
-                            <p><a href="#" class="final"> Whatsapp  </a></p>
-                        </div>
-                </p> 
-            </footer>
+                <p>
+                  <span class="bold">Pé de Fava</span>
+                  &copy; 2025
+                </p>
+                <div class="final">
+                  <p><a href="https://api.whatsapp.com/send?phone=5583993849744&text=Card%C3%A1pio%2C%20por%20favor%21" class="final" target="_blank">Whatsapp</a></p>
+                  <p><a href="https://www.instagram.com/" class="final" target="_blank">Instagram</a></p>
+                </div>
+              </footer>
 
     </body>
 </html>

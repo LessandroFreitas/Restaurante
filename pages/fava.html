@@ -6,43 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title> Restaurante Pé de fava </title>
     <link rel="stylesheet" href="../css/stylespratos.css"/>
-
+    <link rel="icon" href="../src/img/icone.jpg">
+    <script src="../js/script.js"></script>
 </head>
     <body>
-        <!-- Cabeçalho -->
-            <header> 
-                <h1> restaurante pé de fava </h1>
-            </header>
-
-        <!-- Grid do prato escolhido -->
-            <p><h2> FAVA COMPLETA </h2></p>
+        <div class="menu">
+            <div>
+              <a href="../index.html">Home</a>
+              <a href="../pages/menu.html">Menu</a>
+              <a href="../pages/comentarios.html">Avaliações</a>
+            </div>
+            <div>
+              <a href="../pages/reserva.html">Faça sua reserva</a>
+              <a class="a2" href="../pages/carrinho.html">
+                <img src="../src/img/carrin.PNG" width="15" />
+              </a>
+            </div>
+          </div>
+            <p><h2> FAVA SIMPLES </h2></p>
             <main class="container">
-                <section class="products-container"> 
+                <div class="products-container"> 
                     <div class="card">
                         <div class="product-image" id="img-1"></div>
                         
-                        <h3> Fava completa </h3>
+                        <h3> FAVA SIMPLES </h3>
                         <p> Uma verdadeira iguaria da culinária nordestina, nossa fava é preparada com feijão fava cozido lentamente, trazendo uma combinação perfeita de sabor e cremosidade. O prato é enriquecido com carnes saborosas, como carne de sol, linguiça e costelinha de porco, que acrescentam um toque defumado e irresistível. A fava é uma verdadeira celebração dos sabores autênticos do Brasil, ideal para quem aprecia a tradição e o aconchego da cozinha nordestina! </p>
-                        <p>
-                             R$ 
-                             <span class="bold"> 49,90 </span>
+                        
+                            <s>R$ <span class="bold">59,90</span></s> R$ <span class="bold">49,90</span>
+
                         </p>
-                        <a href="#" class="btn"> Adicionar ao pedido </a>
+                        <a onclick="adicionarItem(1)" href="./carrinho.html" class="btn"> Adicionar ao pedido </a>
                     </div>
-                </section> 
+                </div> 
             </main>
 
-        <!-- Rodapê -->
+        
             <footer>
-                <p> 
-                    <span class="bold"> Pé de fava </span> 
-                    &copy; 2025
-                        <div class="final"><br>
-                            <p><a href="#" class="final"> Instagram </a></p>
-                            <p><a href="#" class="final"> Whatsapp  </a></p>
-                        </div>
-                </p> 
-            </footer>
+                <p>
+                  <span class="bold">Pé de Fava</span>
+                  &copy; 2025
+                </p>
+                <div class="final">
+                  <p><a href="https://api.whatsapp.com/send?phone=5583993849744&text=Card%C3%A1pio%2C%20por%20favor%21" class="final" target="_blank">Whatsapp</a></p>
+                  <p><a href="https://www.instagram.com/" class="final" target="_blank">Instagram</a></p>
+                </div>
+              </footer>
 
     </body>
 </html>

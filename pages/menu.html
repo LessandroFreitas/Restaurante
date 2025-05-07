@@ -1,180 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="x-UA-compatible" content="IE-edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title> Restaurante Pé de fava </title>
-    <link rel="stylesheet" href="../css/stylemenu.css"/>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante Pé de Fava</title>
+    <link rel="stylesheet" href="../css/stylemenu.css" />
+    <link rel="icon" href="../src/img/icone.jpg" />
+    <script src="../js/script.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+        <div>
+          <a href="../index.html">Home</a>
+          <a href="../pages/menu.html">Menu</a>
+          <a href="../pages/comentarios.html">Avaliações</a>
+        </div>
+        <div>
+          <a href="../pages/reserva.html">Faça sua reserva</a>
+          <a class="a2" href="../pages/carrinho.html">
+            <img src="../src/img/carrin.PNG" width="15" />
+          </a>
+        </div>
+      </div>
 
-</head>
-    <body>
-        
+    <main class="container">
+      <h2>Pratos Principais</h2>
+      <br />
 
-        <div class="menu">
-            <div>
-              <a href="../index.html">Home</a>
-              <a href="/pages/menu.html">Menu</a>
-            </div>
-            <div>
-              <a href="/pages/reserva.html">Faça sua reserva</a>
+      <div class="products-container">
+        <div class="menu-pratos">
+          <div class="card">
+            <div class="product-image" id="img-1"></div>
+            <h3><a href="fava.html">Fava simples</a></h3>
+            <p><s>R$ <span class="bold">59,90</span></s> R$ <span class="bold">49,90</span></p>
+            <p>Serve até 2 pessoas</p>
+            <div class="escolha">
+              <a onclick="adicionarItem(1)" href="./carrinho.html" class="btn"
+                >Adicionar ao pedido</a
+              >
+              &nbsp;
+              <a href="fava.html" class="btn">Ver detalhes</a>
             </div>
           </div>
-     
-            
-            <main class="container">
-                <p><h2> Pratos Principais</h2></p><br>
-                <section class="products-container">    
-                    <div class="menu-pratos">    
-                        <div class="card">
-                            <div class="product-image" id="img-1"></div>
-                            <h3> <p> <a href = "fava.html"> Fava completa </a> </p>
-                            </h3>
-                            <p>
-                                R$ 
-                                <span class="bold"> 49,90 </span>
-                            </p>
-                            <p>Serve até 2 pessoas</p>
-                            <a href="fava.html" class="btn"> Ver detalhes </a>
-                        </div>
 
-                        <div class="card">
-                            <div class="product-image" id="img-2"></div>
-                            <h3> <p> <a href = "carneDeSol.html"> Carne de sol completa </a> </p>  </h3>
-                            <p>
-                                R$ 
-                                <span class="bold"> 149,90 </span>
-                            </p>
-                            <p>Serve até 3 pessoas</p>
-                            <a href="carneDeSol.html" class="btn"> Ver detalhes </a>
-                        </div>
+          <div class="card">
+            <div class="product-image" id="img-2"></div>
+            <h3><a href="carneDeSol.html">Carne de sol completa</a></h3>
+            <p><s>R$ <span class="bold">189,90</span></s> R$ <span class="bold">149,90</span></p>
+            <p>Serve até 3 pessoas</p>
+            <div class="escolha">
+              <a onclick="adicionarItem(2)" href="./carrinho.html" class="btn"
+                >Adicionar ao pedido</a
+              >
+              &nbsp;
+              <a href="carneDeSol.html" class="btn">Ver detalhes</a>
+            </div>
+          </div>
 
-                        <div class="card">
-                            <div class="product-image" id="img-3"></div>
-                            <h3> <p> <a href = "feijoada.html"> Feijoada </a> </p>  </h3>
-                            <p>
-                                R$ 
-                                <span class="bold"> 39,90 </span>
-                            </p>
-                            <p>Serve uma pessoa</p>
-                            <a href="feijoada.html" class="btn"> Ver detalhes </a>
-                        </div>
+          <div class="card">
+            <div class="product-image" id="img-3"></div>
+            <h3><a href="feijoada.html">Feijoada</a></h3>
+            <p>R$ <span class="bold">39,90</span></p>
+            <p>Serve uma pessoa</p>
+            <div class="escolha">
+              <a onclick="adicionarItem(3)" href="./carrinho.html" class="btn"
+                >Adicionar ao pedido</a
+              >
+              &nbsp;
+              <a href="feijoada.html" class="btn">Ver detalhes</a>
+            </div>
+          </div>
 
-                        <div class="card">
-                            <div class="product-image" id="img-4"></div>
-                            <h3> <p> <a href = "miniacaraje.html"> Mini Acarajés </a> </p> </h3>
-                            <p>
-                                R$ 
-                                <span class="bold"> 29,90 </span>
-                            </p>
-                            <p>Serve até 2 pessoas</p>
-                            <a href="miniacaraje.html" class="btn"> Ver detalhes </a>
-                        </div>
+          <div class="card">
+            <div class="product-image" id="img-4"></div>
+            <h3><a href="miniacaraje.html">Mini Acarajés</a></h3>
+            <p>R$ <span class="bold">29,90</span></p>
+            <p>Serve até 2 pessoas</p>
+            <div class="escolha">
+              <a onclick="adicionarItem(4)" href="./carrinho.html" class="btn"
+                >Adicionar ao pedido</a
+              >
+              &nbsp;
+              <a href="miniacaraje.html" class="btn">Ver detalhes</a>
+            </div>
+          </div>
 
-                        <div class="card">
-                            <div class="product-image" id="img-5"></div>
-                            <h3> <p> <a href = "arrozcarreteiro.html"> Arroz Carreteiro </a> </p> </h3>
-                            <p>
-                                R$ 
-                                <span class="bold"> 129,90 </span>
-                            </p>
-                            <p>Serve até 4 pessoas</p>
-                            <a href="arrozcarreteiro.html" class="btn"> Ver detalhes </a>
-                        </div>
+          <div class="card">
+            <div class="product-image" id="img-5"></div>
+            <h3><a href="arrozcarreteiro.html">Arroz Carreteiro</a></h3>
+            <p><s>R$ <span class="bold">159,90</span></s> R$ <span class="bold">129,90</span></p>
+            <p>Serve até 4 pessoas</p>
+            <div class="escolha">
+              <a onclick="adicionarItem(5)" href="./carrinho.html" class="btn"
+                >Adicionar ao pedido</a
+              >
+              &nbsp;
+              <a href="arrozcarreteiro.html" class="btn">Ver detalhes</a>
+            </div>
+          </div>
 
-                        <div class="card">
-                            <div class="product-image" id="img-6"></div>
-                            <h3> <p> <a href = "baiaodedois.html"> Baião de dois </a> </p> </h3>
-                            <p>
-                                R$ 
-                                <span class="bold"> 79,90 </span>
-                            </p>
-                            <p>Serve até 3 pessoas</p>
-                            <a href="baiaodedois.html" class="btn"> Ver detalhes </a>
-                        </div>
+          <div class="card">
+            <div class="product-image" id="img-6"></div>
+            <h3><a href="baiaodedois.html">Baião de dois</a></h3>
+            <p>R$ <span class="bold">79,90</span></p>
+            <p>Serve até 3 pessoas</p>
+            <div class="escolha">
+              <a onclick="adicionarItem(6)" href="./carrinho.html" class="btn"
+                >Adicionar ao pedido</a
+              >
+              &nbsp;
+              <a href="baiaodedois.html" class="btn">Ver detalhes</a>
+            </div>
+          </div>
 
-                        <div class="card">
-                            <div class="product-image" id="img-7"></div>
-                            <h3> <p> <a href = "galinhada.html"> Galinhada </a> </p> </h3>
-                            <p>
-                                R$ 
-                                <span class="bold"> 22,90 </span>
-                            </p>
-                            <p>Serve uma pessoa</p>
-                            <a href="galinhada.html" class="btn"> Ver detalhes </a>
-                        </div>
+          <div class="card">
+            <div class="product-image" id="img-7"></div>
+            <h3><a href="galinhada.html">Galinhada</a></h3>
+            <p>R$ <span class="bold">22,90</span></p>
+            <p>Serve uma pessoa</p>
+            <div class="escolha">
+              <a onclick="adicionarItem(7)" href="./carrinho.html" class="btn"
+                >Adicionar ao pedido</a
+              >
+              &nbsp;
+              <a href="galinhada.html" class="btn">Ver detalhes</a>
+            </div>
+          </div>
 
-                        <div class="card">
-                            <div class="product-image" id="img-8"></div>
-                            <h3> <p> <a href = "picado.html"> Picado </a> </p> </h3>
-                            <p>
-                                R$ 
-                                <span class="bold"> 29,90 </span>
-                            </p>
-                            <p>Serve uma pessoa</p>
-                            <a href="picado.html" class="btn"> Ver detalhes </a>
-                        </div>
+          <div class="card">
+            <div class="product-image" id="img-8"></div>
+            <h3><a href="picado.html">Picado</a></h3>
+            <p>R$ <span class="bold">29,90</span></p>
+            <p>Serve uma pessoa</p>
+            <div class="escolha">
+              <a onclick="adicionarItem(8)" href="./carrinho.html" class="btn"
+                >Adicionar ao pedido</a
+              >
+              &nbsp;
+              <a href="picado.html" class="btn">Ver detalhes</a>
+            </div>
+          </div>
 
-                        <div class="card">
-                            <div class="product-image" id="img-9"></div>
-                            <h3> <p> <a href = "carnedesolnanata.html"> Carne de sol na nata </a> </p> </h3>
-                            <p>
-                                R$ 
-                                <span class="bold"> 59,90 </span>
-                            </p>
-                            <p>Serve uma pessoa</p>
-                            <a href="carnedesolnanata.html" class="btn"> Ver detalhes </a>
-                        </div>
-                    </div> 
-                </section>
+          <div class="card">
+            <div class="product-image" id="img-9"></div>
+            <h3><a href="carnedesolnanata.html">Carne de sol na nata</a></h3>
+            <p>R$ <span class="bold">59,90</span></p>
+            <p>Serve uma pessoa</p>
+            <div class="escolha">
+              <a onclick="adicionarItem(9)" href="./carrinho.html" class="btn"
+                >Adicionar ao pedido</a
+              >
+              &nbsp;
+              <a href="carnedesolnanata.html" class="btn">Ver detalhes</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                <!-- Grid de menu de bebidas -->
+      <h2>BEBIDAS</h2>
+      <div class="products-container">
+        <div class="menu-pratos bebidas">
+          <div class="card">
+            <div class="product-image" id="img-10"></div>
+            <h3><a href="#">Refrigerante</a></h3>
+            <p>R$ <span class="bold">4,99</span></p>
+            <a onclick="adicionarItem(10)" href="./carrinho.html" class="btn"
+              >Adicionar ao pedido</a
+            >
+          </div>
 
-                <section class="menu-bebidas">
-                    <p><h2> BEBIDAS </h2></p>
-                    <div class="bebidas"><br>
-                        <div class="card">
-                            <div class="product-image" id="img-10"></div>
-                            <h3> <p> <a href = "#"> Refrigerante </a> </p> </h3>
-                            <p>
-                                 R$ 
-                                 <span class="bold"> 4,99 </span>
-                            </p>
-                            <a href="#" class="btn"> adicionar ao pedido </a>
-                        </div>
-                        <div class="card">
-                            <div class="product-image" id="img-11"></div>
-                            <h3> <p> <a href = "#"> Cerveja </a> </p> </h3>
-                            <p>
-                                 R$ 
-                                 <span class="bold"> 9,99 </span>
-                            </p>
-                            <a href="#" class="btn"> adicionar ao pedido </a>
-                        </div>
-                        <div class="card">
-                            <div class="product-image" id="img-12"></div>
-                            <h3> <p> <a href = "#"> Água </a> </p> </h3>
-                            <p>
-                                 R$ 
-                                 <span class="bold"> 3,50 </span>
-                            </p>
-                            <a href="#" class="btn"> adicionar ao pedido </a>
-                        </div>
-                    </div>
-                </section>
-            </main>
+          <div class="card">
+            <div class="product-image" id="img-11"></div>
+            <h3><a href="#">Cerveja</a></h3>
+            <p>R$ <span class="bold">9,99</span></p>
+            <a onclick="adicionarItem(11)" href="./carrinho.html" class="btn"
+              >Adicionar ao pedido</a
+            >
+          </div>
 
-        <!-- Rodapê -->
-            <footer>
-                <p> 
-                    <span class="bold"> Pé de fava </span> 
-                    &copy; 2025
-                        <div class="final"><br>
-                            <p><a href="#" class="final"> Instagram </a></p>
-                            <p><a href="#" class="final"> Whatsapp  </a></p>
-                        </div>
-                </p> 
-            </footer>
+          <div class="card">
+            <div class="product-image" id="img-12"></div>
+            <h3><a href="#">Água</a></h3>
+            <p>R$ <span class="bold">3,50</span></p>
+            <a onclick="adicionarItem(12)" href="./carrinho.html" class="btn"
+              >Adicionar ao pedido</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
 
-    </body>
+    <footer>
+      <p>
+        <span class="bold">Pé de Fava</span>
+        &copy; 2025
+      </p>
+      <div class="final">
+        <p><a href="https://api.whatsapp.com/send?phone=5583993849744&text=Card%C3%A1pio%2C%20por%20favor%21" class="final" target="_blank">Whatsapp</a></p>
+        <p><a href="https://www.instagram.com/" class="final" target="_blank">Instagram</a></p>
+      </div>
+    </footer>
+  </body>
 </html>
